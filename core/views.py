@@ -13,27 +13,19 @@ html_base = """
 
 # Create your views here.
 def home(request):
-    return HttpResponse(html_base + """
-    <h2>Portada</h2>
-    <p>This is a portad</p>
-    """)
+    return render(request, "core/home.html")
+   
 
 def about(request):
-    return HttpResponse(html_base + """
-    <h2>Acerca de</h2>
-    <p>Me llamo Carmen y soy programadora</p>
-    """)
+    return render(request, "core/about.html")
+
     
 # Create your views here.
 def portfolio(request):
-    return HttpResponse(html_base + """
-    <h2>Portafolio</h2>
-    <p>Algunos de mis trabajos</p>
-    """)
+    return render(request, "core/portfolio.html")
+
 
 def contact(request):
-    return HttpResponse(html_base + """
-    <h2>Contact</h2>
-    <p>Información de mi contacto</p><a>cris_rockanrolla2299@hotMAIL.com</a></p>
-    """)
+    return render(request, "core/contact.html")
+
     
