@@ -2,9 +2,12 @@
 
 {% block title%}Portada{% endblock %}
 
+{% block backgroud %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Juan Pérez</h1>
+<span class="subheading">Ingeniero Industrial</span>
+{% endblock %}
 
 {% block content %}
-<h2>Portada</h2>
-
-<p>This is a portad</p>
 {% endblock %}
